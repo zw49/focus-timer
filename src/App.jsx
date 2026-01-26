@@ -124,8 +124,8 @@ function App() {
         {/* Focus circle */}
         <div
           className={`absolute card bg-base-100 shadow-xl rounded-full w-lg h-128 flex items-center justify-center transition-all duration-700 ease-out ${isRunning
-            ? 'opacity-100 scale-80 sm:scale-100'
-            : 'opacity-0 scale-75 pointer-events-none'
+            ? 'opacity-100 scale-75 sm:scale-100'
+            : 'opacity-0 scale-50 pointer-events-none'
             }`}
         >
           <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse-dot"></div>
