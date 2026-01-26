@@ -124,8 +124,8 @@ function App() {
         {/* Focus circle */}
         <div
           className={`absolute card bg-base-100 shadow-xl rounded-full w-lg h-128 flex items-center justify-center transition-all duration-700 ease-out ${isRunning
-              ? 'opacity-100 scale-100'
-              : 'opacity-0 scale-75 pointer-events-none'
+            ? 'opacity-100 scale-80 sm:scale-100'
+            : 'opacity-0 scale-75 pointer-events-none'
             }`}
         >
           <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse-dot"></div>
@@ -134,8 +134,8 @@ function App() {
         {/* Streak display */}
         <div
           className={`absolute flex flex-col items-center gap-4 transition-all duration-500 ease-out ${isRunning
-              ? 'opacity-0 scale-90 pointer-events-none'
-              : 'opacity-100 scale-100'
+            ? 'opacity-0 scale-90 pointer-events-none'
+            : 'opacity-100 scale-100'
             }`}
         >
           <div className="text-center">
@@ -147,8 +147,8 @@ function App() {
               <div key={day} className="flex flex-col items-center gap-1">
                 <div
                   className={`w-8 h-8 rounded flex items-center justify-center transition-colors duration-300 ${completedDays.includes(day)
-                      ? 'bg-primary text-primary-content'
-                      : 'bg-base-300'
+                    ? 'bg-primary text-primary-content'
+                    : 'bg-base-300'
                     }`}
                 >
                   {completedDays.includes(day) && (
